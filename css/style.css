@@ -446,10 +446,12 @@ h1::after {
     border-color: var(--blue-color) transparent transparent transparent;
 
 }
+
 .targets .details .progress>.orange span::after {
     border-color: var(--orange-alt-color) transparent transparent transparent;
 
 }
+
 .targets .details .progress>.green span::after {
     border-color: var(--green-alt-color) transparent transparent transparent;
 }
@@ -472,29 +474,93 @@ h1::after {
 
 /* End targets */
 /* start tickets */
-.tickets .box{
+.tickets .box {
     border: 1px solid #ccc;
     width: calc(50% - 10px);
 }
 
+/* End tickets */
 /* start latest-news */
+.latest-news .news-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 
-.latest-news .btn-shape{
-    background-color: #eee;
-    
 }
 
+.latest-news .btn-shape {
+    background-color: #eee;
+    font-size: 13px;
 
+}
 
+.latest-news .news-row h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 5px;
+
+}
+
+.latest-news .news-row p {
+    font-size: 16px;
+
+}
+
+.latest-news .info {
+    flex-grow: 1;
+}
 
 /* End latest-news */
+/* start Tasks */
+.tasks .task-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
 
-/* End tickets */
+.tasks .info {
+    flex-grow: 1;
+}
+
+.tasks .done {
+    opacity: 0.3;
+}
+
+.tasks h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 5px;
+}
+
+.tasks p {
+    font-size: 16px;
+
+}
+.tasks .delete:not(.no-effect){
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tasks .delete:hover:not(.no-effect){
+    color: var(--red-color);
+}
+/* End Tasks */
 /* Mobile */
 @media (max-width: 767px) {
     .sidebar {
         width: 72px !important;
         padding: 14px 15px !important;
+    }
+
+    .latest-news .news-row {
+        display: block !important;
+    }
+
+    .latest-news .label {
+        margin: 10px auto 0 !important;
+        width: fit-content !important;
+        display: block !important;
     }
 
     .sidebar>h3 {
@@ -552,7 +618,8 @@ h1::after {
     .welcome .body>div:not(:last-child) {
         margin-bottom: 20px;
     }
-    .tickets .box{
+
+    .tickets .box {
         width: 100%;
     }
 }
