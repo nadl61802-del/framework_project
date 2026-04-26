@@ -321,6 +321,7 @@ h1::after {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .wrapper .text-welcome {
@@ -483,14 +484,15 @@ h1::after {
 /* start latest-news */
 .latest-news .news-row:not(:last-of-type) {
     border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 23px;
+    padding-bottom: 28px;
 
 }
 
-.latest-news .btn-shape {
+.btn-shape {
     background-color: #eee;
     font-size: 13px;
+    padding: 4px 8px;
 
 }
 
@@ -507,6 +509,7 @@ h1::after {
 
 }
 
+.latest-uploads .info,
 .latest-news .info {
     flex-grow: 1;
 }
@@ -538,29 +541,121 @@ h1::after {
     font-size: 16px;
 
 }
-.tasks .delete:not(.no-effect){
+
+.tasks .delete:not(.no-effect) {
     cursor: pointer;
     transition: 0.3s;
 }
-.tasks .delete:hover:not(.no-effect){
+
+.tasks .delete:hover:not(.no-effect) {
     color: var(--red-color);
 }
+
 /* End Tasks */
+/* start Top Search */
+.srarch-items .items-head div {
+    font-size: 18px;
+}
+
+/* End Top Search */
+/* start latest-uploads */
+.latest-uploads .news-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+}
+
+.latest-uploads .news-row h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin: 0 0 5px;
+
+}
+
+/* End latest-uploads */
+/* start Last Projects Progrss */
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.last-project ul li.done::before {
+    content: "";
+    background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+    content: "";
+    animation: change-color 0.8s infinite alternate;
+}
+
+.last-project img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+
+}
+
+@keyframes change-color {
+    from {
+        background-color: var(--blue-color);
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/* End Last Projects Progrss */
+/* start Reminder Widget */
+.reminders ul li .key {
+    width: 15px;
+    height: 15px;
+
+}
+
+.reminders ul li .blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li .green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li .orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li .red {
+    border-left: 2px solid var(--red-color);
+}
+
+/* End Reminder Widget */
 /* Mobile */
 @media (max-width: 767px) {
+
+    /* sidebar */
     .sidebar {
         width: 72px !important;
         padding: 14px 15px !important;
-    }
-
-    .latest-news .news-row {
-        display: block !important;
-    }
-
-    .latest-news .label {
-        margin: 10px auto 0 !important;
-        width: fit-content !important;
-        display: block !important;
     }
 
     .sidebar>h3 {
@@ -596,6 +691,7 @@ h1::after {
         display: none;
     }
 
+    /* wrapper */
     .wrapper {
         grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
@@ -603,7 +699,8 @@ h1::after {
         gap: 10px;
     }
 
-    .body {
+    /* welcome */
+    .welcome .body {
         display: block;
     }
 
@@ -619,7 +716,33 @@ h1::after {
         margin-bottom: 20px;
     }
 
+    /* tickets */
     .tickets .box {
         width: 100%;
+    }
+
+    /*latest-news  */
+    .latest-news .news-row {
+        display: block !important;
+    }
+
+    .latest-news .label {
+        margin: 10px auto 0 !important;
+        width: fit-content !important;
+        display: block !important;
+    }
+
+    .last-project ul li:last-child {
+        position: relative;
+    }
+
+    .last-project ul li:last-child::after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 20px;
+        width: 7px;
+        height: calc(100% - 0px);
+        background-color: white;
     }
 }
