@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="page d-flex">
+            <!-- start sidebar -->
+            <div class="sidebar bg-white p-4 position-relative">
+                <h3 class="position-relative text-center mt-0">Sidebar</h3>
+                <ul>
+                    <li data-label="Dashboard">
+                        <a class="d-flex align-items-center fs-14 mt-2 text-black rad-6 p-2" href="index.html"
+                            title="Dashboard" aria-label="Dashboard">
+                            <i class="fa-solid fa-chart-bar fa-fw"></i>
+                            <span class="hide-mobile">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Settings">
+                        <a class="active d-flex align-items-center fs-14 text-black rad-6 p-2" href="settings.html"
+                            title="Settings" aria-label="Settings">
+                            <i class="fa-solid fa-chart-simple fa-fw"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Profile">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="profile.html"
+                            title="Profile" aria-label="Profile">
+                            <i class="fa-solid fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Projects">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="projects.html"
+                            title="Projects" aria-label="Projects">
+                            <i class="fa-solid fa-briefcase fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Courses">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="courses.html"
+                            title="Courses" aria-label="Courses">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Friends">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="friends.html"
+                            title="Friends" aria-label="Friends">
+                            <i class="fa-solid fa-user-friends fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Files">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="files.html" title="Files"
+                            aria-label="Files">
+                            <i class="fa-solid fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+
+                    <li data-label="Plans">
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="plans.html" title="Plans"
+                            aria-label="Plans">
+                            <i class="fa-solid fa-list-check fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End sidebar -->
+
+            <div class="content w-100 overflow-hidden">
+                <!-- start head -->
+                <div class="head bg-white d-flex justify-content-between align-items-center p-4">
+                    <div class="search position-relative">
+                        <input class="p-2" type="search" placeholder="Type A Keyword ">
+                    </div>
+                    <div class="icons d-flex align-items-center">
+                        <span class="notification position-relative">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="image/swiper.webp" alt="icon-img" class="ms-3" width="32" height="32">
+                    </div>
+                </div>
+                <!-- End head -->
+                <h1 class="position-relative fw-semibold">Settings</h1>
+
+                <div class="wrapper d-grid gap-3">
+                    <!-- start Site Control -->
+                    <div class="settings-card position-relative p-4 rounded-4 bg-white  overflow-hidden custom-card">
+                        <h2 class="mt-0 mb-2 fs-3 fw-bold">Site Control</h2>
+                        <p class="fs-6 m-0 text-welcome">Control The Website If There Is Maintenance
+                        </p>
+
+                        <div class="settings-control d-flex flex-wrap gap-4 my-4 justify-content-between align-items-center"
+                            data-close-message-target="site-close-message">
+                            <div class="settings-copy">
+                                <h3 class="mb-2 fs-4">Website Control</h3>
+                                <p class="m-0 text-welcome  lh-lg">Open/Close Website And Type The Reason</p>
+
+                                <div
+                                    class="status-badges d-flex justify-content-start align-items-center gap-2 flex-wrap mt-2">
+                                    <span
+                                        class="status-badge online d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill fw-bold fs-5"
+                                        aria-live="polite">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <span class="status-badge-text fs-6">
+                                            &#1575;&#1604;&#1605;&#1608;&#1602;&#1593; &#1610;&#1593;&#1605;&#1604;
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="settings-actions d-flex flex-column align-items-end gap-3 flex-shrink-0">
+                                <div
+                                    class="settings-toggle-row with-state d-flex align-items-center justify-content-end flex-wrap gap-3">
+                                    <span class="settings-state is-open fs-5 fw-bold lh-sm text-nowrap"
+                                        aria-live="polite">
+                                        &#1605;&#1601;&#1578;&#1608;&#1581;
+                                    </span>
+                                    <label class="settings-toggle d-inline-flex" for="site-control-toggle-main">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="site-control-toggle-main" checked>
+                                        <span
+                                            class="toggle-switch position-relative rounded-pill cursor-pointer custom-switch w-78"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <textarea id="site-close-message" name="close-message"
+                            class="close-message  w-100 mt-1 p-2 border rounded-4 fs-6 lh-lg bg-white resize-none custom-textarea"
+                            placeholder="Close Message Content" aria-label="Close Message Content"></textarea>
+                    </div>
+                    <!-- End Site Control -->
+                    <!-- start General Info -->
+                    <div class="General p-4 rounded-4 bg-white">
+                        <h2 class=" mt-0 mb-2 fs-3 fw-bold">General Info</h2>
+                        <p class="fs-6 mt-0 mb-4 text-welcome">General Information About Your Account</p>
+                        <div class="mb-3">
+                            <label for="first-name" class="fs-6 text-welcome d-block mb-2">Frist Name</label>
+                            <input type="text" id="first-name" class="b-none p-2 border rounded-3 d-block w-100"
+                                placeholder="Frist Name">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="fs-6 text-welcome d-block mb-2">Last Name</label>
+                            <input type="text" id="last-name" class="b-none p-2 border rounded-3 d-block w-100"
+                                placeholder="Last Name">
+
+                        </div>
+                        <div>
+                            <label for="last-email" class="fs-6 text-welcome d-block mb-2">Last Email</label>
+                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                <input type="email" id="last-email" class="b-none p-2 border rounded-3 d-block w-100"
+                                    placeholder="Last Email" readonly>
+                                <a href="#" title="Change" aria-label="Change"
+                                    class="fs-5 fw-semibold text-decoration-none">Change</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End General Info -->
+                    <!-- start Security Info -->
+                    <div class="security-nfo p-4 rounded-4 bg-white">
+                        <h2 class=" mt-0 mb-2 fs-3 fw-bold">Security Info</h2>
+                        <p class="fs-6 mt-0 mb-4 text-welcome">Security Information About Your Account</p>
+                        <div class="sec-box-2 mb-3 d-flex align-items-center justify-content-between">
+                            <div class="">
+                                <span class="fs-5 ">Password</span>
+                                <p class="text-welcome mt-2 mb-0 fs-6">Last Change On 25/10/2021</p>
+                            </div>
+                            <a href="#" class="button bg-primary  text-white btn-shape">Change</a>
+                        </div>
+
+                        <!-- Fixed: this lower block had duplicate IDs, so only the upper toggle was initialized. -->
+                        <div
+                            class="settings-control d-flex flex-wrap gap-4 my-4 mt-0 justify-content-between align-items-center">
+                            <div class="settings-copy">
+                                <span class="fs-5 ">Two-Factor Authentication</span>
+                                <p class="m-0 text-welcome  lh-lg">Enable/Disable The Feature</p>
+                            </div>
+
+                            <div class="settings-actions d-flex flex-column align-items-end gap-3 flex-shrink-0">
+                                <div
+                                    class="settings-toggle-row d-flex align-items-center justify-content-end flex-wrap gap-3">
+                                    <label class="settings-toggle d-inline-flex" for="site-control-toggle-security">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="site-control-toggle-security" checked>
+                                        <span
+                                            class="toggle-switch position-relative rounded-pill cursor-pointer custom-switch w-78"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sec-box mb-3  d-flex align-items-center justify-content-between">
+                            <div class="">
+                                <span class="fs-5">Devices</span>
+                                <p class="text-welcome mt-2 mb-0 fs-6">Check The Login Devices List</p>
+                            </div>
+                            <a href="#" class="button bg-body-secondary text-black btn-shape">Devices</a>
+                        </div>
+                    </div>
+                    <!-- End Security Info -->
+                    <!-- start Soial Info -->
+                    <div class="soial-boxs p-4 rounded-4 bg-white">
+                        <h2 class=" mt-0 mb-2 fs-3 fw-bold">Soial Info</h2>
+                        <p class="fs-6 mt-0 mb-4 text-welcome">Soial Madia Information</p>
+
+                        <div class="twitter mb-3 d-flex align-items-center">
+                            <i
+                                class="fa-brands fa-twitter fa-xl text-welcome d-flex align-items-center justify-content-center "></i>
+                            <input type="text" class="w-100" placeholder="Twitter Username">
+                        </div>
+
+                        <div class="facebook mb-3 d-flex align-items-center">
+                            <i
+                                class="fa-brands fa-facebook-f fa-xl text-welcome d-flex align-items-center justify-content-center "></i>
+                            <input type="text" class="w-100" placeholder="Facebook Username">
+                        </div>
+
+                        <div class="linkedin mb-3 d-flex align-items-center">
+                            <i
+                                class="fa-brands fa-linkedin fa-xl text-welcome d-flex align-items-center justify-content-center "></i>
+                            <input type="text" class="w-100" placeholder="Linkedin Username">
+                        </div>
+
+                        <div class="youtube mb-3 d-flex align-items-center">
+                            <i
+                                class="fa-brands fa-youtube fa-xl text-welcome d-flex align-items-center justify-content-center "></i>
+                            <input type="text" class="w-100" placeholder="Youtube Username">
+                        </div>
+                    </div>
+                    <!-- End Soial Info -->
+                    <!-- start widget control -->
+                    <div class="widget-control p-4 rounded-4 bg-white">
+                        <h2 class=" mt-0 mb-2 fs-3 fw-bold">Widget Control</h2>
+                        <p class="fs-6 mt-0 mb-4 text-welcome">Show/Hide Widgets</p>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="one" checked>
+                            <label for="one" class="fw-semibold">Quick Draft</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="two" checked>
+                            <label for="two" class="fw-semibold">Yearly Targets</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="three" checked>
+                            <label for="three" class="fw-semibold">Tickets Statistics</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="four" checked>
+                            <label for="four" class="fw-semibold">Latest News</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="five">
+                            <label for="five" class="fw-semibold">Latest Tasks</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="checkbox" id="six" checked>
+                            <label for="six" class="fw-semibold">Top Search Items</label>
+
+                        </div>
+                    </div>
+                    <!-- End widget control-->
+                    <!-- start backup control-->
+                    <div class="backup-control p-4 rounded-4 bg-white">
+                        <h2 class=" mt-0 mb-2 fs-3 fw-bold">Backup Manager</h2>
+                        <p class="fs-6 mt-0 mb-4 text-welcome">Control Backup Time And Location</p>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="radio" name="time" id="daily" class="me-3 " checked>
+                            <label class="fw-semibold" for="daily">Daily</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="radio" name="time" id="weekly" class="me-3 ">
+                            <label class="fw-semibold" for="weekly">Weekly</label>
+                        </div>
+                        <div class="control d-flex align-items-center mb-3">
+                            <input type="radio" name="time" id="monthly" class="me-3 ">
+                            <label class="fw-semibold" for="monthly">Monthly</label>
+                        </div>
+
+                        <div class="servers d-flex align-aitems-center text-center gap-1">
+
+                            <input type="radio" name="servers" id="servers-one">
+                            <div class="server mb-3 rounded-2 w-100">
+                                <label for="servers-one" class="d-block m-3">
+                                    <i class="fa-solid fa-server d-block mb-2"></i>
+                                    Megaman
+                                </label>
+                            </div>
+                            <input type="radio" name="servers" id="servers-two">
+                            <div class="server mb-3 rounded-2 w-100">
+                                <label for="servers-two" class="d-block m-3">
+                                    <i class="fa-solid fa-server d-block mb-2"></i>
+                                    Zero
+                                </label>
+                            </div>
+                            <input type="radio" name="servers" id="servers-three">
+                            <div class="server mb-3 rounded-2 w-100">
+                                <label for="servers-three" class="d-block m-3">
+                                    <i class="fa-solid fa-server d-block mb-2"></i>
+                                    Sigma
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End backup control-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
