@@ -1514,7 +1514,7 @@ h1::after {
 /* ----------------------------////// End Profile ////////--------------------------*/
 /* ----------------------------////// start Projects //////------------------------*/
 .projects-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .project-card {
@@ -1829,6 +1829,7 @@ h1::after {
 
 .file-card {
     padding: 16px;
+    cursor: pointer;
 }
 
 .file-actions {
@@ -1884,6 +1885,7 @@ h1::after {
     width: 260px;
     padding: 24px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .files-stats h2 {
@@ -1900,6 +1902,7 @@ h1::after {
     border: 1px solid #eee;
     border-radius: 14px;
     margin-bottom: 14px;
+    cursor: pointer;
 }
 
 .file-stat .icon {
@@ -1964,6 +1967,7 @@ h1::after {
     color: white;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .upload-btn:hover i {
@@ -1984,7 +1988,7 @@ h1::after {
 /* ----------------------------////// End Files ////////---------------------------*/
 /* ----------------------------////// start Plans //////---------------------------*/
 .plans-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .plan-card {
