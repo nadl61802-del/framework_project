@@ -70,7 +70,7 @@ ul {
 /* ---------------------------- start Document ----------------------------*/
 /* start sidebar */
 .sidebar {
-    width: 230px;
+    width: 200px;
     min-height: 100vh;
     background: #fff;
     padding: 20px 12px;
@@ -319,7 +319,7 @@ h1::after {
 /* end content */
 /* wrapper */
 .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -415,7 +415,9 @@ h1::after {
     height: 4px;
     overflow: visible;
 }
-
+.targets p{
+    font-size: 14px;
+}
 .targets .details .progress>span {
     position: absolute;
     height: 100%;
@@ -492,14 +494,14 @@ h1::after {
 
 .btn-shape {
     background-color: #eee;
-    font-size: 15px;
+    font-size: 11px;
     padding: 4px 8px;
     border-radius: 6px;
 
 }
 
 .latest-news .news-row h3 {
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: -0.5px;
     margin: 0 0 5px;
@@ -507,7 +509,7 @@ h1::after {
 }
 
 .latest-news .news-row p {
-    font-size: 16px;
+    font-size: 10px;
 
 }
 
@@ -533,14 +535,14 @@ h1::after {
 }
 
 .tasks h3 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: -0.5px;
     margin: 0 0 5px;
 }
 
 .tasks p {
-    font-size: 16px;
+    font-size: 15px;
 
 }
 
