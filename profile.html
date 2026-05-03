@@ -7,44 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="page d-flex">
-            <!-- start sidebar -->
             <div class="sidebar bg-white p-4 position-relative">
-                <h3 class="position-relative text-center mt-0">Sidebar</h3>
+                <h3 class="position-relative text-center mt-0">Elzero</h3>
                 <ul>
                     <li data-label="Dashboard">
                         <a class="d-flex align-items-center fs-14 mt-2 text-black rad-6 p-2" href="index.html"
                             title="Dashboard" aria-label="Dashboard">
                             <i class="fa-solid fa-chart-bar fa-fw"></i>
-                            <span class="hide-mobile">Dashboard</span>
+                            <span>Dashboard</span>
                         </a>
                     </li>
-
                     <li data-label="Settings">
-                        <a class=" d-flex align-items-center fs-14 text-black rad-6 p-2" href="settings.html"
+                        <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="settings.html"
                             title="Settings" aria-label="Settings">
-                            <i class="fa-solid fa-chart-simple fa-fw"></i>
+                            <i class="fa-solid fa-gear fa-fw"></i>
                             <span>Settings</span>
                         </a>
                     </li>
-
                     <li data-label="Profile">
                         <a class="active d-flex align-items-center fs-14 text-black rad-6 p-2" href="profile.html"
                             title="Profile" aria-label="Profile">
@@ -52,15 +44,13 @@
                             <span>Profile</span>
                         </a>
                     </li>
-
                     <li data-label="Projects">
                         <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="projects.html"
                             title="Projects" aria-label="Projects">
-                            <i class="fa-solid fa-briefcase fa-fw"></i>
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
                             <span>Projects</span>
                         </a>
                     </li>
-
                     <li data-label="Courses">
                         <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="courses.html"
                             title="Courses" aria-label="Courses">
@@ -68,86 +58,230 @@
                             <span>Courses</span>
                         </a>
                     </li>
-
                     <li data-label="Friends">
                         <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="friends.html"
                             title="Friends" aria-label="Friends">
-                            <i class="fa-solid fa-user-friends fa-fw"></i>
+                            <i class="fa-solid fa-users fa-fw"></i>
                             <span>Friends</span>
                         </a>
                     </li>
-
                     <li data-label="Files">
                         <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="files.html" title="Files"
                             aria-label="Files">
-                            <i class="fa-solid fa-file fa-fw"></i>
+                            <i class="fa-solid fa-file-lines fa-fw"></i>
                             <span>Files</span>
                         </a>
                     </li>
-
                     <li data-label="Plans">
                         <a class="d-flex align-items-center fs-14 text-black rad-6 p-2" href="plans.html" title="Plans"
                             aria-label="Plans">
-                            <i class="fa-solid fa-list-check fa-fw"></i>
+                            <i class="fa-solid fa-credit-card fa-fw"></i>
                             <span>Plans</span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <!-- End sidebar -->
 
             <div class="content w-100 overflow-hidden">
-                <!-- start head -->
                 <div class="head bg-white d-flex justify-content-between align-items-center p-4">
                     <div class="search position-relative">
-                        <input class="p-2" type="search" placeholder="Type A Keyword ">
+                        <input class="p-2" type="search" placeholder="Type A Keyword">
                     </div>
                     <div class="icons d-flex align-items-center">
                         <span class="notification position-relative">
                             <i class="fa-regular fa-bell fa-lg"></i>
                         </span>
-                        <img src="image/swiper.webp" alt="icon-img" class="ms-3" width="32" height="32">
+                        <img src="image/swiper.webp" alt="account avatar" class="ms-3" width="32" height="32">
                     </div>
                 </div>
-                <!-- End head -->
+
                 <h1 class="position-relative fw-semibold">Profile</h1>
 
-                <div class="wrapper d-grid gap-3">
-                    <!-- start overview -->
-                    <div class="overview p-4 rounded-4 bg-white d-flex align-items-center">
+                <div class="wrapper profile-wrapper d-grid gap-3">
+                    <section class="overview page-card d-flex align-items-stretch">
                         <div class="avatar-box">
-                            <img src="image/avatar.webp" alt="image/avatar" width="60" height="60" loading="lazy" class="img-fluid rounded-circle mb-2">
-                            <h3 class="m-0">Adel Nasser</h3>
-                            <p class="text-welcome mt-2">Level 20</p>
-                            <div class="level rounded-2 bg-body-secondary position-relative">
-                                <span style="width: 70%;">0000</span>
+                            <img src="image/avatar.webp" alt="Osama Elzero avatar" width="120" height="120"
+                                loading="lazy" class="img-fluid rounded-circle mb-3">
+                            <h3 class="m-0">Osama Elzero</h3>
+                            <p class="text-welcome mt-2 mb-3">Level 20</p>
+                            <div class="level rounded-pill bg-body-secondary position-relative">
+                                <span style="width: 72%;">72%</span>
                             </div>
-                            <div class="rating mt-2 mb-2">
-                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <div class="rating mt-3 mb-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
                             </div>
                             <p class="text-welcome m-0 fs-6">550 Rating</p>
                         </div>
+
                         <div class="info-box">
+                            <div class="info-row">
+                                <h4 class="info-title">General Information</h4>
+                                <div class="profile-detail"><span>Full Name</span> Osama Elzero</div>
+                                <div class="profile-detail"><span>Gender</span> Male</div>
+                                <div class="profile-detail"><span>Country</span> Egypt</div>
+                                <div class="profile-switch">
+                                    <label class="settings-toggle d-inline-flex" for="profile-switch-1">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="profile-switch-1" checked>
+                                        <span class="toggle-switch position-relative rounded-pill"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
 
+                            <div class="info-row">
+                                <h4 class="info-title">Personal Information</h4>
+                                <div class="profile-detail"><span>Email</span> osama@elzero.com</div>
+                                <div class="profile-detail"><span>Phone</span> +20 123 456 7890</div>
+                                <div class="profile-detail"><span>Date Of Birth</span> 10/10/1985</div>
+                                <div class="profile-switch">
+                                    <label class="settings-toggle d-inline-flex" for="profile-switch-2">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="profile-switch-2">
+                                        <span class="toggle-switch position-relative rounded-pill"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="info-row">
+                                <h4 class="info-title">Job Information</h4>
+                                <div class="profile-detail"><span>Title</span> Full Stack Developer</div>
+                                <div class="profile-detail"><span>Programming Language</span> Python</div>
+                                <div class="profile-detail"><span>Years Of Experience</span> 15+</div>
+                                <div class="profile-switch">
+                                    <label class="settings-toggle d-inline-flex" for="profile-switch-3">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="profile-switch-3" checked>
+                                        <span class="toggle-switch position-relative rounded-pill"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="info-row">
+                                <h4 class="info-title">Billing Information</h4>
+                                <div class="profile-detail"><span>Payment Method</span> PayPal</div>
+                                <div class="profile-detail"><span>Monthly Salary</span> $12,500</div>
+                                <div class="profile-detail"><span>Status</span> Active</div>
+                                <div class="profile-switch">
+                                    <label class="settings-toggle d-inline-flex" for="profile-switch-4">
+                                        <input type="checkbox"
+                                            class="toggle-checkbox position-absolute opacity-0 pe-none"
+                                            id="profile-switch-4">
+                                        <span class="toggle-switch position-relative rounded-pill"
+                                            aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End overview-->
-                    <!-- start my skills -->
+                    </section>
 
-                    <!-- End my skills -->
-                    <!-- start lastest activities -->
+                    <section class="skills-card page-card p-4">
+                        <h2 class="mt-0 mb-2 fs-3 fw-bold">My Skills</h2>
+                        <p class="text-welcome mt-0 mb-4 fs-6">Complete Skills List</p>
+                        <div class="skills-list">
+                            <div class="skills-row">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">Pugjs</span>
+                                <span class="skill-tag">Haml</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">Sass</span>
+                                <span class="skill-tag">Stylus</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">Vuejs</span>
+                                <span class="skill-tag">Reactjs</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">Jest</span>
+                                <span class="skill-tag">Jasmine</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">Laravel</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                            </div>
+                        </div>
+                    </section>
 
-                    <!-- End lastest activities -->
+                    <section class="activities-card page-card p-4">
+                        <h2 class="mt-0 mb-2 fs-3 fw-bold">Latest Activities</h2>
+                        <p class="text-welcome mt-0 mb-4 fs-6">Latest Activities Done By The User</p>
+
+                        <div class="activity-row">
+                            <img src="image/activity-01.webp" alt="Store activity" width="64" height="64"
+                                loading="lazy">
+                            <div class="activity-copy">
+                                <h3>Store</h3>
+                                <p>Bought The Mastering Python Course</p>
+                            </div>
+                            <div class="activity-time">
+                                <strong>18:10</strong>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-row">
+                            <img src="image/activity-02.webp" alt="Academy activity" width="64" height="64"
+                                loading="lazy">
+                            <div class="activity-copy">
+                                <h3>Academy</h3>
+                                <p>Got The PHP Certificate</p>
+                            </div>
+                            <div class="activity-time">
+                                <strong>16:05</strong>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-row">
+                            <img src="image/activity-03.webp" alt="Badges activity" width="64" height="64"
+                                loading="lazy">
+                            <div class="activity-copy">
+                                <h3>Badges</h3>
+                                <p>Unlocked The 10 Skills Badge</p>
+                            </div>
+                            <div class="activity-time">
+                                <strong>13:05</strong>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-row">
+                            <img src="image/activity-01.webp" alt="Store activity" width="64" height="64"
+                                loading="lazy">
+                            <div class="activity-copy">
+                                <h3>Store</h3>
+                                <p>Bought The Typescript Course</p>
+                            </div>
+                            <div class="activity-time">
+                                <strong>12:05</strong>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
