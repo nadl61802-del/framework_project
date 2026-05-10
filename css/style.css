@@ -19,6 +19,23 @@ body {
     margin: 0;
 }
 
+.skip-link {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    padding: 10px 14px;
+    background-color: var(--blue-color);
+    color: #fff;
+    border-radius: 10px;
+    transform: translateY(-80px);
+    transition: transform 0.2s ease;
+    z-index: 1001;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
 *:focus {
     outline: none;
 }
@@ -31,6 +48,10 @@ a {
 .page {
     min-height: 100vh;
     background-color: #f1f5f9;
+}
+
+.content {
+    min-width: 0;
 }
 
 ul {
